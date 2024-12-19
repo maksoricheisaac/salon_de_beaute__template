@@ -77,7 +77,7 @@ export const Navbar = () => {
             <Button className="hidden md:inline-flex" asChild>
               
               <Link 
-                href="https://wa.me/242056073456?text=Bonjour%20et%20bienvenue%20chez%20Kam's%20Beauty%20!%20%F0%9F%92%85%E2%9C%A8%0ANous%20sommes%20ravis%20de%20vous%20accueillir.%20%F0%9F%92%96%0AComment%20pouvons-nous%20vous%20aider%20aujourd'hui%20?%0A%0A%F0%9F%92%87%E2%80%8D%E2%99%80%EF%B8%8F%20Besoin%20d'informations%20sur%20nos%20services%20?%0A%F0%9F%93%85%20Prendre%20un%20rendez-vous%20?%0A%F0%9F%92%AC%20Poser%20une%20question%20?%0AEnvoyez-nous%20un%20message,%20et%20nous%20vous%20r%C3%A9pondrons%20avec%20plaisir%20!%20%F0%9F%8C%B8">
+                href="https://wa.me/242065168975">
                   Prendre RDV
               </Link>
             </Button>
@@ -114,7 +114,7 @@ export const Navbar = () => {
               ))}
             </ul>
             <Button className="mt-4 w-full" asChild>
-              <Link href="https://wa.me/242056073456?text=Bonjour%20et%20bienvenue%20chez%20Kam's%20Beauty%20!%20%F0%9F%92%85%E2%9C%A8%0ANous%20sommes%20ravis%20de%20vous%20accueillir.%20%F0%9F%92%96%0AComment%20pouvons-nous%20vous%20aider%20aujourd'hui%20?%0A%0A%F0%9F%92%87%E2%80%8D%E2%99%80%EF%B8%8F%20Besoin%20d'informations%20sur%20nos%20services%20?%0A%F0%9F%93%85%20Prendre%20un%20rendez-vous%20?%0A%F0%9F%92%AC%20Poser%20une%20question%20?%0AEnvoyez-nous%20un%20message,%20et%20nous%20vous%20r%C3%A9pondrons%20avec%20plaisir%20!%20%F0%9F%8C%B8">
+              <Link href="https://wa.me/242065168975">
                 Prendre RDV
               </Link>
             </Button>
