@@ -43,7 +43,7 @@ export default function Services(){
       <Navbar />
       <PageHero 
         title="Nos Services" 
-        subtitle="Découvrez les services offerts à Kam's Beauty"
+        subtitle="Découvrez les services offerts à SB"
         backgroundImage="https://media.gettyimages.com/id/1159483894/fr/photo/salon.jpg?s=612x612&w=0&k=20&c=3izcqgc-abXU8voRns45RuyY6cxM3ggiadVaeLHwpk4="
       />
       <div className="pt-16">
@@ -71,13 +71,13 @@ export default function Services(){
                   </div>
                   <div className="p-6">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4 transform transition-transform duration-300 hover:rotate-12">
-                        <service.icon className="w-6 h-6 text-pink-600" />
+                      <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4 transform transition-transform duration-300 hover:rotate-12">
+                        <service.icon className="w-6 h-6 text-primary" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
                     </div>
                     <p className="text-gray-600 mb-4">{service.description}</p>
-                    <p className="text-pink-600 font-semibold animate-pulse">{service.price}</p>
+                    <p className="text-primary font-semibold animate-pulse">{service.price}</p>
                   </div>
                 </motion.div>
               ))}

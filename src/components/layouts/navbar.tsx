@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { Button } from '../ui/button'
+import logo from "@/public/logo.png"
+import Image from 'next/image'
 
 
 const navItems = [
@@ -43,15 +45,14 @@ export const Navbar = () => {
         ? 'bg-white/70 backdrop-blur-md py-2' 
         : 'py-4'
     }`}>
-       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-      `}</style>
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
           <div className={`text-2xl font-bold transition-all duration-300 ${
             isScrolled ? 'text-primary-800' : 'text-primary-900'
           }`}>
-            <Link href="/" className='text-primary' style={{ fontFamily: 'Alex Brush, cursive' }}> Kam's Beauty </Link>
+            <Link href="/" className='text-primary'> 
+              <Image src={logo} width={70} height={70} alt="Logo" /> 
+            </Link>
           </div>
           
           {/* Desktop menu */}
@@ -77,7 +78,7 @@ export const Navbar = () => {
             <Button className="hidden md:inline-flex" asChild>
               
               <Link 
-                href="https://wa.me/242065168975">
+                href="https://wa.me/242056073456">
                   Prendre RDV
               </Link>
             </Button>
@@ -114,7 +115,7 @@ export const Navbar = () => {
               ))}
             </ul>
             <Button className="mt-4 w-full" asChild>
-              <Link href="https://wa.me/242065168975">
+              <Link href="https://wa.me/242056073456">
                 Prendre RDV
               </Link>
             </Button>

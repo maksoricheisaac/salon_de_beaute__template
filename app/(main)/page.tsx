@@ -101,7 +101,7 @@ export default function Home(){
               className="space-y-6"
             >
               <h2 className="text-4xl font-bold text-gray-900">
-                Bienvenue à Kam's Beauty
+                Bienvenue à SB
               </h2>
               <p className="text-lg text-gray-600" style={{ fontFamily: 'Alex Brush, cursive' }}>
                 Découvrez un espace où l'élégance rencontre l'expertise. Notre salon de coiffure est bien plus qu'un simple lieu de beauté - c'est un sanctuaire où votre style personnel prend vie.

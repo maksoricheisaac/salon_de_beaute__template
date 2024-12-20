@@ -39,7 +39,7 @@ const About = () => {
       <Navbar />
       <PageHero 
         title="À Propos de Nous" 
-        subtitle="Découvrez l'histoire et les valeurs qui font de Kam's Beauty un salon unique"
+        subtitle="Découvrez l'histoire et les valeurs qui font de SB un salon unique"
         backgroundImage="https://img.freepik.com/photos-premium/sentez-vous-detendu-belle-mere-fille-mode-se-sentant-detendue-passer-journee-dans-salon-beaute_259150-36181.jpg?semt=ais_hybrid"
       />
       
@@ -56,7 +56,7 @@ const About = () => {
               </h2>
               <div className="prose prose-lg text-gray-600">
                 <p className="mb-4">
-                  Depuis notre création, Kam's Beauty s'est engagé à offrir des services de coiffure exceptionnels dans une atmosphère chaleureuse et accueillante. Notre salon est né d'une passion pour la beauté et d'un désir de créer un espace où chaque client se sent spécial.
+                  Depuis notre création, SB s'est engagé à offrir des services de coiffure exceptionnels dans une atmosphère chaleureuse et accueillante. Notre salon est né d'une passion pour la beauté et d'un désir de créer un espace où chaque client se sent spécial.
                 </p>
                 <p className="mb-4">
                   Notre équipe de professionnels qualifiés combine expertise technique et créativité pour vous offrir des résultats qui dépassent vos attentes. Nous croyons que chaque client est unique, c'est pourquoi nous personnalisons nos services pour répondre à vos besoins spécifiques.

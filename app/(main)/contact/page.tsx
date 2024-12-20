@@ -17,28 +17,28 @@ export default function Contact(){
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-6 h-6 text-pink-600 mt-1" />
+                  <Phone className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Téléphone</h3>
                     <p className="text-gray-600">01 23 45 67 89</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Mail className="w-6 h-6 text-pink-600 mt-1" />
+                  <Mail className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">contact@beautyhair.fr</p>
+                    <p className="text-gray-600">contact@sb.cg</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-pink-600 mt-1" />
+                  <MapPin className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Adresse</h3>
                     <p className="text-gray-600">123 Rue de la Beauté, Paris</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Clock className="w-6 h-6 text-pink-600 mt-1" />
+                  <Clock className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Horaires d'ouverture</h3>
                     <p className="text-gray-600">Lundi - Samedi : 9h00 - 19h00</p>

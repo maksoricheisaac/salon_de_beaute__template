@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kam's Beauty",
-  description: "Kams's Beauty, votre salon de beauté conplet : coiffure, onglerie, make-up et vente de produits cosmétiques. Situé au Congo Brazzaville",
-  keywords: "Kam's Beauty, salon de coiffure, ong:lerie, make-up, vente de produits cosmétiques, Bacongo, Brazzaville, Congo",
-  applicationName: "Kams's Beauty",
+  title: "SB",
+  description: "SB, votre salon de beauté conplet : coiffure, onglerie, make-up et vente de produits cosmétiques. Situé au Congo Brazzaville",
+  keywords: "SB, salon de coiffure, ong:lerie, make-up, vente de produits cosmétiques, Brazzaville, Congo",
+  applicationName: "SB",
   authors: {name: "Makso Riche Isaac", url: "https://my-portfolio-ruby-theta-72.vercel.app/"},
   openGraph: {
     type: "website",
     countryName: "Congo",
-    description: "Kams's Beauty, votre salon de beauté conplet : coiffure, onglerie, make-up et vente de produits cosmétiques. Situé au Congo Brazzaville",
-    title: "Kam's Beauty",
+    description: "SB, votre salon de beauté conplet : coiffure, onglerie, make-up et vente de produits cosmétiques. Situé au Congo Brazzaville",
+    title: "SB",
   }
 };
 
