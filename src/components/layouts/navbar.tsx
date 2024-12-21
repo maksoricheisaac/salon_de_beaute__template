@@ -78,7 +78,7 @@ export const Navbar = () => {
             <Button className="hidden md:inline-flex" asChild>
               
               <Link 
-                href="https://wa.me/242056073456">
+                href="/appointment">
                   Prendre RDV
               </Link>
             </Button>
@@ -115,7 +115,7 @@ export const Navbar = () => {
               ))}
             </ul>
             <Button className="mt-4 w-full" asChild>
-              <Link href="https://wa.me/242056073456">
+              <Link href="/appointment">
                 Prendre RDV
               </Link>
             </Button>
