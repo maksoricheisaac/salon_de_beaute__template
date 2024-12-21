@@ -30,7 +30,7 @@ export const HomeHero = () => {
               asChild
               className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg mb-2"
             >
-              <Link href="https://wa.me/242065168975">Prendre rendez-vous</Link>
+              <Link href="/appointment">Prendre rendez-vous</Link>
             </Button>
             <Button
               asChild
