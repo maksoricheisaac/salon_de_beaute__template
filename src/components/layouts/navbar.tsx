@@ -42,8 +42,8 @@ export const Navbar = () => {
   return (
     <header className={`bg-white/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
       isScrolled 
-        ? 'bg-white/70 backdrop-blur-md py-2' 
-        : 'py-4'
+        ? 'bg-white/70 backdrop-blur-md py-1' 
+        : 'py-0'
     }`}>
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
@@ -90,7 +90,7 @@ export const Navbar = () => {
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </nav>
 
