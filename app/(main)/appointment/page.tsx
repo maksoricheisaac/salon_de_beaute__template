@@ -16,7 +16,7 @@ import { Calendar } from "@/src/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/src/components/ui/popover";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, Loader } from "lucide-react";
 import { cn } from "@/src/lib/utils";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -33,9 +33,11 @@ import { useToast } from "@/src/hooks/use-toast";
 import { PhoneInput } from "@/src/components/phone-input";
 import { sendAppointmentEmail } from "./appointment.action";
 import { Toaster } from "@/src/components/ui/toaster";
+import { useState } from "react";
 
 const Appointment = () => {
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false)
   const form = useForm<AppointmentFormData>({
     resolver: zodResolver(appointmentSchema),
     defaultValues: {
@@ -48,7 +50,11 @@ const Appointment = () => {
   });
 
   const onSubmit = async(data: AppointmentFormData) => {
+    setLoading(true)
     const response = await sendAppointmentEmail(data)
+    if(response){
+        setLoading(false)
+    }
 
     if(response?.data?.success){
         toast({
@@ -207,7 +213,13 @@ const Appointment = () => {
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90"
                 >
-                  Confirmer le rendez-vous
+                  {
+                    loading
+                    ?
+                    <Loader className="animate-spin text-white w-8 h-8" />
+                    :
+                    <>Confirmer le rendez-vous</>
+                  }
                 </Button>
               </form>
             </Form>
