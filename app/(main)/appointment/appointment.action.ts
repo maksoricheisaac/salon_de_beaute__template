@@ -3,6 +3,8 @@
 import { action } from "@/src/lib/next-safe";
 import { appointmentSchema } from "./appointment.schema";
 import nodemailer from "nodemailer";
+import { format } from 'date-fns';
+import { fr } from 'date-fns/locale';
 
 
 const transporter = nodemailer.createTransport({
@@ -15,6 +17,10 @@ const transporter = nodemailer.createTransport({
     rejectUnauthorized: false, 
   },
 });
+
+function formatDateInFrench(date: Date) {
+    return format(date, 'PP', { locale: fr });
+}
 
 export const sendAppointmentEmail = action
   .schema(appointmentSchema)
@@ -43,7 +49,7 @@ export const sendAppointmentEmail = action
               <li><strong>Email :</strong> ${data.email}</li>
               <li><strong>Téléphone :</strong> ${data.phone}</li>
               <li><strong>Service :</strong> ${data.service}</li>
-              <li><strong>Date du rendez-vous :</strong> ${data.date.toLocaleString()}</li>
+              <li><strong>Date du rendez-vous :</strong> ${formatDateInFrench(data.date)}</li>
             </ul>
             <p>Veuillez confirmer cette réservation dès que possible.</p>
           </body>
