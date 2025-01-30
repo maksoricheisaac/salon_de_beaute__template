@@ -39,11 +39,11 @@ export const sendAppointmentEmail = action
             <h1>Nouvelle Réservation</h1>
             <p>Une nouvelle réservation a été effectuée avec les détails suivants :</p>
             <ul>
-              <li><strong>Nom :</strong> ${data.firstName} ${data.lastName}</li>
+              <li><strong>Nom & prénom :</strong> ${data.lastName} ${data.firstName}</li>
               <li><strong>Email :</strong> ${data.email}</li>
               <li><strong>Téléphone :</strong> ${data.phone}</li>
               <li><strong>Service :</strong> ${data.service}</li>
-              <li><strong>Date du rendez-vous :</strong> ${new Date(data.date).toLocaleString()}</li>
+              <li><strong>Date du rendez-vous :</strong> ${data.date.toLocaleString()}</li>
             </ul>
             <p>Veuillez confirmer cette réservation dès que possible.</p>
           </body>
